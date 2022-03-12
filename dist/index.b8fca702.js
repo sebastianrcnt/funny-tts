@@ -573,7 +573,7 @@ document.addEventListener("DOMContentLoaded", function() {
         startSpeaking(globalSpeaking);
         fetch("https://api.ipify.org").then((response1)=>{
             response1.text().then((ip)=>{
-                fetch("http://ip-api.com/json/" + ip).then((response)=>{
+                fetch("https://ip-api.com/json/" + ip).then((response)=>{
                     response.text().then((gloc)=>{
                         gloc = JSON.parse(gloc);
                         const message = JSON.stringify({
